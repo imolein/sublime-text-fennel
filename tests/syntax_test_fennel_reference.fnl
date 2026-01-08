@@ -1,6 +1,6 @@
 ; SYNTAX TEST "Packages/Fennel/Fennel.sublime-syntax"
 
-; Fennel 1.3.0 on Lua 5.4.0
+; Fennel 1.1.0 on Lua 5.4.0
 
 ; These are all the special forms recognized by the Fennel compiler. It does not include built-in Lua functions; see the Lua reference manual or the Lua primer for that.
 
