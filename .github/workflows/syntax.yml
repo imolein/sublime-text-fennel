@@ -21,12 +21,12 @@ jobs:
       matrix:
         include:
           - build: 3211
-          - build: 4073
+          - build: stable
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
-      - uses: actions/checkout@v2
-      - uses: SublimeText/syntax-test-action@v1
+      - uses: actions/checkout@v4
+      - uses: SublimeText/syntax-test-action@v2
         with:
           build: ${{ matrix.build }}
           package_name: Fennel
-          package_root: sublime-text-fennel
