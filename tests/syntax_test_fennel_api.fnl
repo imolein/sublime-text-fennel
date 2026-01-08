@@ -1,6 +1,6 @@
 ; SYNTAX TEST "Packages/Fennel/Fennel.sublime-syntax"
 
-; Fennel 1.3.0 on Lua 5.4.4
+; Fennel 1.6.1 on Lua 5.5.0
 
 (fennel.ast-source a)
 ; <- punctuation.section.parens.begin.fennel
@@ -56,6 +56,12 @@
 ;            ^ source.fennel
 ;             ^ punctuation.section.parens.end.fennel
 
+(fennel.getinfo a)
+; <- punctuation.section.parens.begin.fennel
+;^^^^^^^^^^^^^^ entity.name.tag.fennel_support.fennel
+;               ^ source.fennel
+;                ^ punctuation.section.parens.end.fennel
+
 (fennel.install a)
 ; <- punctuation.section.parens.begin.fennel
 ;^^^^^^^^^^^^^^ entity.name.tag.fennel_support.fennel
@@ -109,6 +115,12 @@
 ;^^^^^^^^^^^^^^^ entity.name.tag.fennel_support.fennel
 ;                ^ source.fennel
 ;                 ^ punctuation.section.parens.end.fennel
+
+(fennel.multi-sym? a)
+; <- punctuation.section.parens.begin.fennel
+;^^^^^^^^^^^^^^^^^ entity.name.tag.fennel_support.fennel
+;                  ^ source.fennel
+;                   ^ punctuation.section.parens.end.fennel
 
 (fennel.parser a)
 ; <- punctuation.section.parens.begin.fennel
