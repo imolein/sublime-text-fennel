@@ -1959,6 +1959,20 @@
 ;                    ^ constant.numeric.integer.decimal.fennel
 ;                     ^^ punctuation.section.parens.end.fennel
 
+(print table.create)
+; <- punctuation.section.parens.begin.fennel
+;^^^^^ entity.name.tag.lua_support.fennel
+;      ^^^^^^^^^^^^ variable.language.lua_constant.fennel
+;                  ^ punctuation.section.parens.end.fennel
+
+(print (table.create 1))
+; <- punctuation.section.parens.begin.fennel
+;^^^^^ entity.name.tag.lua_support.fennel
+;      ^ punctuation.section.parens.begin.fennel
+;       ^^^^^^^^^^^^ entity.name.tag.lua_support.fennel
+;                    ^ constant.numeric.integer.decimal.fennel
+;                     ^^ punctuation.section.parens.end.fennel
+
 (print table.insert)
 ; <- punctuation.section.parens.begin.fennel
 ;^^^^^ entity.name.tag.lua_support.fennel
